@@ -27,7 +27,6 @@ file.close()
      end
 
      socket:on("receive", function(sck, response)
-     	local line = string.find(response,"\r\n")
      	local rupdateflag=string.sub(response,0,string.find(response,"\r\n"))
      	if updateflag ~= rupdateflag then 
      		file.remove("temp.lua")

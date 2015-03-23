@@ -20,7 +20,7 @@ file.close()
      --HTTP请求头定义
 
      local rupdateflag = ""
-     socket:send("GET /"..yourfilename.." HTTP/1.1\r\n" ..    --这里只是获取某个监测点的数据
+     socket:send("GET /"..yourfilename.." HTTP/1.1\r\n" ..    
             "Host: "..Server.."\r\n" ..
             "Accept: */*" ..
             "User-Agent: Nodemcu CHIPID:"..node.chipid().."\r\n\r\n")
